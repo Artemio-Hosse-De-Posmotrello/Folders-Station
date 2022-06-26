@@ -1,0 +1,11 @@
+{% extends 'folders/base.html' %}
+
+{% block title %}
+Мичуринский Проспект
+{% endblock %}
+
+{% block content %}
+    <h1> Папка "{{ folder.title }}"</h1>
+    <h4>{{ folder.descrip }}</h4>
+    <h5><a href="{{ folder.file.url }}" class="btn btn-primary btn-sm">Скачать Файл</a></h5>
+{% endblock %}

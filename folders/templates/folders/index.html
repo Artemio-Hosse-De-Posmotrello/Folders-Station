@@ -1,0 +1,14 @@
+{% extends 'folders/base.html' %}
+
+{% block title %}
+Мичуринский Проспект
+{% endblock %}
+
+{% block content %}
+<h1>Главная страница</h1>
+<a href="{% url 'folderR' %}"><button type="button" class="btn btn-info">Папка "Р"</button></a>
+<a href="{% url 'folderI' %}"><button type="button" class="btn btn-info">Папка "И"</button></a>
+<a href="{% url 'folderU' %}"><button type="button" class="btn btn-info">Папка "У"</button></a>
+<a href="{% url 'folderDCH' %}"><button type="button" class="btn btn-info">Папка "ДЧ"</button></a>
+<a href="{% url 'folderD' %}"><button type="button" class="btn btn-info">Папка "Д"</button></a>
+{% endblock %}

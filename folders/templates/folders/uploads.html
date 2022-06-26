@@ -1,0 +1,16 @@
+{% extends 'folders/base.html' %}
+
+{% block title %}
+Мичуринские загрузки
+{% endblock %}
+
+{% block content %}
+    <form method="POST" enctype="multipart/form-data">
+        {% csrf_token %}
+        <input type="file" name = 'document'>
+        <button type="submit">Загрузить файл</button>
+        {% if url %}
+        <p>Загруженный файл: <a href="{{ url }}">{{ url }}</a></p>
+        {% endif %}
+    </form>
+{% endblock %}
